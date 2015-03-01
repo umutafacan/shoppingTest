@@ -14,6 +14,12 @@
 		4C45A8D61AA0AF4000D98534 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C45A8D51AA0AF4000D98534 /* Images.xcassets */; };
 		4C45A8D91AA0AF4000D98534 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C45A8D71AA0AF4000D98534 /* LaunchScreen.xib */; };
 		4C45A8E51AA0AF4000D98534 /* shoppingTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C45A8E41AA0AF4000D98534 /* shoppingTestTests.m */; };
+		4C45A8F01AA0AF8000D98534 /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C45A8EF1AA0AF8000D98534 /* ProductDetailViewController.m */; };
+		4C6F30891AA1003900D02BEF /* STSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6F30881AA1003900D02BEF /* STSingleton.m */; };
+		4C6F308F1AA344D900D02BEF /* image0.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6F308B1AA344D900D02BEF /* image0.png */; };
+		4C6F30901AA344D900D02BEF /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6F308C1AA344D900D02BEF /* image1.png */; };
+		4C6F30911AA344D900D02BEF /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6F308D1AA344D900D02BEF /* image2.png */; };
+		4C6F30921AA344D900D02BEF /* image3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6F308E1AA344D900D02BEF /* image3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,15 @@
 		4C45A8DE1AA0AF4000D98534 /* shoppingTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shoppingTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C45A8E31AA0AF4000D98534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C45A8E41AA0AF4000D98534 /* shoppingTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shoppingTestTests.m; sourceTree = "<group>"; };
+		4C45A8EE1AA0AF8000D98534 /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
+		4C45A8EF1AA0AF8000D98534 /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
+		4C6F30861AA0F3B900D02BEF /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = /Users/umut/XcodeGit/shoppingTest/shoppingTest/PrefixHeader.pch; sourceTree = "<absolute>"; };
+		4C6F30871AA1003900D02BEF /* STSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSingleton.h; sourceTree = "<group>"; };
+		4C6F30881AA1003900D02BEF /* STSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSingleton.m; sourceTree = "<group>"; };
+		4C6F308B1AA344D900D02BEF /* image0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image0.png; sourceTree = "<group>"; };
+		4C6F308C1AA344D900D02BEF /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
+		4C6F308D1AA344D900D02BEF /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
+		4C6F308E1AA344D900D02BEF /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +104,12 @@
 				4C45A8D51AA0AF4000D98534 /* Images.xcassets */,
 				4C45A8D71AA0AF4000D98534 /* LaunchScreen.xib */,
 				4C45A8C81AA0AF4000D98534 /* Supporting Files */,
+				4C45A8EE1AA0AF8000D98534 /* ProductDetailViewController.h */,
+				4C45A8EF1AA0AF8000D98534 /* ProductDetailViewController.m */,
+				4C6F30861AA0F3B900D02BEF /* PrefixHeader.pch */,
+				4C6F30871AA1003900D02BEF /* STSingleton.h */,
+				4C6F30881AA1003900D02BEF /* STSingleton.m */,
+				4C6F308A1AA344D900D02BEF /* images */,
 			);
 			path = shoppingTest;
 			sourceTree = "<group>";
@@ -117,6 +138,17 @@
 				4C45A8E31AA0AF4000D98534 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C6F308A1AA344D900D02BEF /* images */ = {
+			isa = PBXGroup;
+			children = (
+				4C6F308B1AA344D900D02BEF /* image0.png */,
+				4C6F308C1AA344D900D02BEF /* image1.png */,
+				4C6F308D1AA344D900D02BEF /* image2.png */,
+				4C6F308E1AA344D900D02BEF /* image3.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +231,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C6F308F1AA344D900D02BEF /* image0.png in Resources */,
+				4C6F30901AA344D900D02BEF /* image1.png in Resources */,
+				4C6F30911AA344D900D02BEF /* image2.png in Resources */,
 				4C45A8D41AA0AF4000D98534 /* Main.storyboard in Resources */,
 				4C45A8D91AA0AF4000D98534 /* LaunchScreen.xib in Resources */,
+				4C6F30921AA344D900D02BEF /* image3.png in Resources */,
 				4C45A8D61AA0AF4000D98534 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,8 +256,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C45A8D11AA0AF4000D98534 /* ViewController.m in Sources */,
+				4C6F30891AA1003900D02BEF /* STSingleton.m in Sources */,
 				4C45A8CE1AA0AF4000D98534 /* AppDelegate.m in Sources */,
 				4C45A8CB1AA0AF4000D98534 /* main.m in Sources */,
+				4C45A8F01AA0AF8000D98534 /* ProductDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,9 +381,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Onur Nesvat (7SDPXRX66J)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Onur Nesvat (7SDPXRX66J)";
+				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/umut/XcodeGit/shoppingTest/shoppingTest/PrefixHeader.pch;
 				INFOPLIST_FILE = shoppingTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "79249fcd-67ea-40c7-b192-61086ed1a09d";
 			};
 			name = Debug;
 		};
@@ -353,9 +398,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/umut/XcodeGit/shoppingTest/shoppingTest/PrefixHeader.pch;
 				INFOPLIST_FILE = shoppingTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "79249fcd-67ea-40c7-b192-61086ed1a09d";
 			};
 			name = Release;
 		};
@@ -412,6 +462,7 @@
 				4C45A8EA1AA0AF4000D98534 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C45A8EB1AA0AF4000D98534 /* Build configuration list for PBXNativeTarget "shoppingTestTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +471,7 @@
 				4C45A8ED1AA0AF4000D98534 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

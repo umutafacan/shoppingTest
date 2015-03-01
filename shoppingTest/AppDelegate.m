@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import <UIKit/UIKit.h> 
 
 @interface AppDelegate ()
 
@@ -17,6 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+        
     return YES;
 }
 
@@ -42,4 +45,40 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+
+    NSDictionary *dict = [self parseQueryString:[url query]];
+    NSLog(@"Dict %@",dict);
+    [[STSingleton sharedInstance] setUrlDict:dict];
+    if ([[dict objectForKey:@"id"] isEqualToString:@""] || [dict objectForKey:@"id"] == nil) {
+        
+    }
+    else
+    {
+        [[STSingleton sharedInstance] setIsPushTriggered:true];
+        if ([[STSingleton sharedInstance] getIsAppOpened]) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"DEEPLINK" object:nil];
+        }
+    }
+    
+    
+    
+    return YES;
+}
+
+- (NSDictionary *)parseQueryString:(NSString *)query {
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithCapacity:6];
+    NSArray *pairs = [query componentsSeparatedByString:@"&"];
+    
+    for (NSString *pair in pairs) {
+        NSArray *elements = [pair componentsSeparatedByString:@"="];
+        NSString *key = [[elements objectAtIndex:0] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        NSString *val = [[elements objectAtIndex:1] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        
+        [dict setObject:val forKey:key];
+    }
+    return dict;
+}
 @end
