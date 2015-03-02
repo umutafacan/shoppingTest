@@ -31,11 +31,7 @@
 {
     if ([[STSingleton sharedInstance] getIsPushTriggered] && ![[STSingleton sharedInstance] getIsAppOpened] ) {
         
-        NSString *idString = [[STSingleton sharedInstance] getElementFromUrlDictWithKey:@"id"];
-        int idNumber = [idString intValue];
-        NSString *name = [_arrayProducts objectAtIndex:idNumber];
-        [self pushToProductDetailWithName:name ID:idNumber];
-        
+        [self pushPageWithNotification];
     }
     [[STSingleton sharedInstance] setIsAppOpened:YES];
     [[STSingleton sharedInstance] setIsPushTriggered:NO];
@@ -44,6 +40,12 @@
 
 -(void)pushPageWithNotification
 {
+    
+    if (self.navigationController.viewControllers.count > 1 ) {
+        [self.navigationController  popToRootViewControllerAnimated:YES];
+    }
+
+    
     
     NSString *idString = [[STSingleton sharedInstance] getElementFromUrlDictWithKey:@"id"];
     int idNumber = [idString intValue];

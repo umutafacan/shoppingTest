@@ -12,13 +12,20 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelProductName;
 @property (weak, nonatomic) IBOutlet UILabel *labelProductId;
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewProduct;
+@property (weak, nonatomic) IBOutlet UIButton *buttonTest;
 
 @end
 
 @implementation ProductDetailViewController
+- (IBAction)testPurchase:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Shopping Test" message:@"SatınAlma Gerçekleşti" delegate:self cancelButtonTitle:@"Tamam" otherButtonTitles: nil];
+    [alert show];
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -30,7 +37,11 @@
     
         _labelProductId.text = [NSString stringWithFormat:@"%d",_productID];
         _imageViewProduct.image = [UIImage imageNamed:[NSString stringWithFormat:@"image%d",_productID]];
-        
+    
+    _buttonTest.layer.cornerRadius = 2.0f;
+    _buttonTest.layer.borderColor = (__bridge CGColorRef)([UIColor blackColor]);
+    _buttonTest.layer.borderWidth = 5.0f;
+    
     
     
 }
